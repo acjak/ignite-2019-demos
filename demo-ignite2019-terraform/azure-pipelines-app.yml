@@ -46,7 +46,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'MTC Denver Sandbox'
+        azureSubscription: 'Pay-As-You-Go (fc80b864-095e-445b-b9c5-288aba397100)'
         appType: 'webAppLinux'
         WebAppName:  jl-ignite2019-terraform-demo-staging-app
         packageForLinux: '$(Pipeline.Workspace)/app'
@@ -72,7 +72,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'MTC Denver Sandbox'
+        azureSubscription: 'Pay-As-You-Go (fc80b864-095e-445b-b9c5-288aba397100)'
         appType: 'webAppLinux'
         WebAppName:  jl-ignite2019-terraform-demo-production-app
         packageForLinux: '$(Pipeline.Workspace)/app'
